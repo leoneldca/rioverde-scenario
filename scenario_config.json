@@ -1,0 +1,37 @@
+{
+    "simulation": {
+        "id": "RioVerde",
+        "duration": "10000s",
+        "randomSeed": 268965854,
+        "projection": {
+            "centerCoordinates": {
+                "latitude": -17.7957371,
+                "longitude": -50.9478584
+            },
+            "cartesianOffset": {
+                "x": -504935.46,
+                "y": -8031283.69
+            }
+        },
+        "network": {
+            "netMask": "255.255.0.0",
+            "vehicleNet": "10.1.0.0",
+            "rsuNet": "10.2.0.0",
+            "tlNet": "10.3.0.0",
+            "csNet": "10.4.0.0",
+            "serverNet": "10.5.0.0",
+            "tmcNet": "10.6.0.0"
+        }
+    },
+    "federates": {
+        "application": true,
+        "environment": false,
+        "cell": true,
+        "ns3": false,
+        "omnetpp": false,
+        "output": true,
+        "sns": true,
+        "sumo": true,
+        "phabmacs": false
+    }
+}

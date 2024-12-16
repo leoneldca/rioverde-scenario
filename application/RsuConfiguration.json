@@ -1,0 +1,19 @@
+{
+	"radioRange" : 200.0,
+	"beaconInterval" : 1,
+	"defautMsgHops" : 1,
+	"beaconMsgType" : "rsuBeaconMsg",
+	"carBeaconType" : "carBeaconToVFN",
+	"vfnServiceMsgType" : "vfnServiceMsg",
+	"rsuRunnerMsgType" : "rsuServiceRunner",
+	"serviceResultMsgType": "serviceResultMsg",
+	"serverAddress" : "10.5.0.0",
+	"serverName" : "server_0",
+	"netMask": "255.255.0.0",
+    "vehicleNet":"10.1.0.0",
+	"rsuNet": "10.2.0.0",
+    "tlNet": "10.3.0.0",
+    "csNet": "10.4.0.0",
+    "serverNet": "10.5.0.0",
+    "tmcNet": "10.6.0.0"
+}

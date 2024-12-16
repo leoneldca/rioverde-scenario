@@ -1,0 +1,629 @@
+{
+  "config":{
+    "scaleTraffic": 1.0,
+    "start": 0.0,
+    "end": 5000.0,
+    "fixedOrder": true,
+    "adjustStartingTimes": false,
+    "randomizeFlows": false,
+    "randomizeStartingTimes" : false,
+    "randomizeWeights": false
+  },
+  "prototypes": [
+    {
+      "name": "Car",
+      "length": "4.0 m",
+      "minGap": "2.5 m",
+      "speedMode": "NORMAL",
+      "maxSpeed": "50 kmh",
+      "vehicleClass": "Car",
+      "accel": 2.6,
+      "decel": 4.5,
+      "sigma": 0.5,
+      "tau": 1.0,
+      "speedFactor": 1.0,
+      "applications": [ 
+              "org.eclipse.mosaic.app.sdnvfn.CarService1ClientApp",
+              "org.eclipse.mosaic.app.sdnvfn.CarInfoToVfnSendingApp",
+              "org.eclipse.mosaic.app.sdnvfn.CarV2xInterfaceApp"           
+            ],
+      "deviations": {
+        "length": 0.0,
+        "width": 0.0,
+        "height": 0.0,
+        "minGap": 0.0,
+        "maxSpeed": 0.0,
+        "speedFactor": 0.1,
+        "accel": 0.0,
+        "decel": 0.0,
+        "tau": 0.0
+      }
+    },
+    {
+      "name": "RSU",
+      "applications":[
+                      "org.eclipse.mosaic.app.sdnvfn.RsuBeaconApp",
+                      "org.eclipse.mosaic.app.sdnvfn.RsuOFSwitchApp",
+                      "org.eclipse.mosaic.app.sdnvfn.RsuKnowledgeBaseApp"
+                    ]
+    }
+  ],
+  "vehicles": [
+    {
+      "route": "1",
+      "startingTime": 0.0,
+      "maxTime": 3000.0,
+      "targetFlow": 10.0,
+      "spawningMode": "CONSTANT",
+      "maxNumberVehicles": 4,
+      "laneSelectionMode": "BEST",
+      "departSpeed": "0.0 m/s",
+      "departSpeedMode": "MAXIMUM",
+      "types": [
+        {
+            "name": "Car",           
+            "group": "RedRoute",
+            "weight": 0.0
+        }
+      ],
+      "deterministic": true,
+      "departConnectionIndex": 0,
+      "pos": 0      
+    },
+    {
+      "route": "2",
+      "startingTime": 0.0,
+      "maxTime": 3000.0,
+      "targetFlow": 10.0,
+      "spawningMode": "CONSTANT",
+      "maxNumberVehicles": 4,
+      "laneSelectionMode": "BEST",
+      "departSpeed": "0.0 m/s",
+      "departSpeedMode": "MAXIMUM",
+      "types": [
+        {
+            "name": "Car",
+            "group": "GreenRoute",
+            "weight": 0.0
+        }
+      ],
+      "deterministic": true,
+      "departConnectionIndex": 0,
+      "pos": 0      
+    },
+    {
+      "route": "3",
+      "startingTime": 0.0,
+      "maxTime": 3000.0,
+      "targetFlow": 10.0,
+      "spawningMode": "CONSTANT",
+      "maxNumberVehicles": 4,
+      "laneSelectionMode": "BEST",
+      "departSpeed": "0.0 m/s",
+      "departSpeedMode": "MAXIMUM",
+      "types": [
+        {
+            "name": "Car",
+            "group": "YellowRoute",
+            "weight": 0.0
+        }
+      ],
+      "deterministic": true,
+      "departConnectionIndex": 0,
+      "pos": 0
+    },
+    {
+      "route": "4",
+      "startingTime": 0.0,
+      "maxTime": 3000.0,
+      "targetFlow": 10.0,
+      "spawningMode": "CONSTANT",
+      "maxNumberVehicles": 5,
+      "laneSelectionMode": "BEST",
+      "departSpeed": "0.0 m/s",
+      "departSpeedMode": "MAXIMUM",
+      "types": [
+        {
+            "name": "Car",
+            "group": "BlueRoute",
+            "weight": 1.0
+        }
+      ],
+      "deterministic": true,
+      "departConnectionIndex": 0,
+      "pos": 0
+    }
+  ],
+  "matrixMappers": [
+    {
+      "points": [ 
+        {
+            "name": "CityZoneA",
+            "_comment": "Zona oeste - prox. ao hotel canadá",
+            "position": {
+                "center": {
+                    "latitude": -17.796447583948005, 
+                    "longitude": -50.940086470084054
+                },
+                "radius": 300
+            }       
+        },
+        {
+            "name": "CityZoneB",
+            "_comment": "Zona leste - prox. alameda barrinha - alto",
+            "position": {
+                "center": {
+                    "latitude": -17.79912732025838,
+                    "longitude": -50.92727041742427
+                },
+                "radius": 300
+            }       
+        },
+        {
+          "name": "CityZoneC",
+          "_comment": "Zona Nordeste - Acima do Magazine Luiza",
+          "position": {
+              "center": {
+                  "latitude": -17.791070005139822,  
+                  "longitude": -50.927279861819336
+              },
+              "radius": 300
+          }       
+        },
+        {
+          "name": "CityZoneD",
+          "_comment": "Zona Sudoeste - Próximo ao cemitério São Miguel",
+          "position": {
+              "center": {
+                  "latitude": -17.799785791538387,
+                  "longitude": -50.93704488376938
+              },
+              "radius": 300
+          }       
+        }
+    ],
+    "startingTime": 5.0,
+    "maxTime": 8000.0,
+    "targetFlow": 500.0,
+    "color":"BLUE",
+    "spawningMode": "CONSTANT",
+    "laneSelectionMode": "BEST",
+    "departSpeed": "0.0 m/s",
+    "departSpeedMode": "MAXIMUM",
+    "types": [
+        {
+          "name": "Car",
+          "group": "GeneratedRoutes",
+          "weight": 1.0
+        }
+    ],
+    "odValues": [
+        [0, 59, 59, 59],
+        [59, 0, 59, 59],
+        [59, 59, 0, 59],
+        [59, 59, 59, 0]
+    ]
+    }
+  ],
+  "rsus": [
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.798712999856644,
+          "longitude":-50.93961008315638
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.798491160456326,
+          "longitude": -50.93907691950577
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.797658320403265, 
+          "longitude": -50.94011043696408
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.795904391376094, 
+          "longitude": -50.9405677206394
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.797418402603665, 
+          "longitude": -50.939161271722355
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.796247456266656,
+          "longitude": -50.93944427327345
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.79558349315372, 
+          "longitude": -50.93897089034738
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.79827659537966, 
+          "longitude": -50.93855587887402
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.798837918771646,
+          "longitude": -50.93752550167937
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.797021879186076,
+          "longitude": -50.938197801926904
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.79525193107457,
+          "longitude": -50.937660128441124
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.797766170120905,
+          "longitude": -50.93755665055613
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.797850854887574,
+          "longitude": -50.936692441469766
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.79733661206359,
+          "longitude": -50.93672348114455
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.798737476966608,
+          "longitude": -50.93488593239791
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.799088974609326,
+          "longitude": -50.933444874116844
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.79694986070548,
+          "longitude": -50.935869677935756
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.79773133820751,
+          "longitude": -50.934930904802606
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.796495274179268,
+          "longitude": -50.93489871829519
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.796025363267656,
+          "longitude": -50.93581066934701
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.795085570301207,
+          "longitude": -50.93586970950895
+
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.79422785364245,
+          "longitude": -50.935908738895165
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.794059367160504,
+          "longitude": -50.93490283582842
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.794552268224187,
+          "longitude": -50.93342762087423
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.79315531676112,
+          "longitude": -50.93291261611562
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.792279306364403,
+          "longitude": -50.93088485024018
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.793602224863086,
+          "longitude": -50.93140793099401
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.791224526671424,
+          "longitude": -50.93144816414113
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.7912909012508,
+          "longitude": -50.92905298760705
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.79034849458525,
+          "longitude": -50.92954652669711
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.79229583031034,
+          "longitude": -50.928514346854264
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.79314150508598,
+          "longitude": -50.93043138485211
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.792720029524062,
+          "longitude": -50.929534302794885
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.79457007715984,
+          "longitude": -50.93093589555644
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.794106082030513,
+          "longitude": -50.92996139860669
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.795529351288568,
+          "longitude": -50.93293221154283
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.796008489763683,
+          "longitude": -50.93139495406196
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.795512654637925,
+          "longitude": -50.93051791790012
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.796457771720245,
+          "longitude": -50.930024132173145
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.79504870073856,
+          "longitude": -50.92946485965055
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.79456537634441,
+          "longitude": -50.92851338660173
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.79321076469876,
+          "longitude": -50.92806166683774
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.794157998429537,
+          "longitude": -50.92756183941501
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.79547197237693,
+          "longitude": -50.92808952483817
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.795011503676907,
+          "longitude": -50.927121913464426
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.797260815837905,
+          "longitude": -50.92852728654806
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.79629927212211,
+          "longitude": -50.92758182155343
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.7968903205497,
+          "longitude": -50.92715266269978
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.797528381990745,
+          "longitude": -50.92635050144448
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.798712883281137,
+          "longitude": -50.926939163658005
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.800325249687436,
+          "longitude": -50.927905145205784
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.799232331420406,
+          "longitude": -50.92938233445757
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.79829121341513,
+          "longitude": -50.92842273995302
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.797800385852568,
+          "longitude": -50.928978505738016
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.797694233539683,
+          "longitude": -50.930500107035996
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.797293880632598,
+          "longitude": -50.931961938167056
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.799035615306956,
+          "longitude": -50.93108548842413
+      }
+    },
+    {
+      "name": "RSU",
+      "position": {
+          "latitude": -17.796949588038718,
+          "longitude": -50.93336441180591
+      }
+    }
+
+
+
+  ],
+  "servers": [
+    {
+        "name": "VfnServer",
+        "group": "VfnServer",
+        "applications": [ "org.eclipse.mosaic.app.sdnvfn.ServerVfnControllerApp"
+                        ]
+    }
+  ]
+  
+}

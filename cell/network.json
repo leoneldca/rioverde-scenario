@@ -1,0 +1,67 @@
+{
+  "defaultDownlinkCapacity": "1 Gbps",
+  "defaultUplinkCapacity": "1 Gbps",
+  "globalNetwork": {
+    "id": "globalNetwork",
+    "uplink": {
+      "delay": {
+        "type": "ConstantDelay",
+        "delay": "10 ms"
+      },
+      "transmission": {
+        "lossProbability": 0.0,
+        "maxRetries": 2
+      },
+      "capacity": "1 Gbps"
+    },
+    "downlink": {
+      "unicast": {
+        "delay": {
+          "type": "ConstantDelay",
+          "delay": "10 ms"
+        },
+        "transmission": {
+          "lossProbability": 0.0,
+          "maxRetries": 2
+        }
+      },
+      "multicast": {
+        "delay": {
+          "type": "ConstantDelay",
+          "delay": "10 ms"
+        },
+        "transmission": {
+          "lossProbability": 0.0,
+          "maxRetries": 0
+        },
+        "usableCapacity": 0.8
+      },
+      "capacity": "1 Gbps"
+    }
+  },
+  "servers": [
+    {
+      "id": "VfnServer",
+      "uplink": {
+          "delay": {
+              "type": "ConstantDelay",
+              "delay": "50 ms"
+          },
+          "transmission": {
+              "lossProbability": 0.0
+          }
+      },
+      "downlink": {
+          "unicast": {
+              "delay": {
+                  "type": "ConstantDelay",
+                  "delay": "50 ms"
+              },
+              "transmission": {
+                  "lossProbability": 0.0
+              }
+          }
+      }
+  }
+  ]
+}

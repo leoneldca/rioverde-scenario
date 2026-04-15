@@ -63,11 +63,7 @@
         "rsu_40:rsu_39,rsu_42,rsu_43",
         "rsu_41:rsu_30,rsu_34,rsu_42",
         "rsu_42:rsu_40,rsu_41,rsu_44",
-<<<<<<< HEAD
-	"rsu_43:rsu_38,rsu_40,rsu_44,rsu_46",
-=======
 	    "rsu_43:rsu_38,rsu_40,rsu_44,rsu_46",
->>>>>>> Scenario Rio Verde Updated
         "rsu_44:rsu_42,rsu_43,rsu_48",
         "rsu_45:rsu_38,rsu_46,rsu_49,rsu_53",
         "rsu_46:rsu_43,rsu_45,rsu_47",
@@ -81,10 +77,6 @@
         "rsu_54:rsu_51,rsu_53,rsu_55,rsu_56",
         "rsu_55:rsu_36,rsu_54,rsu_57",
         "rsu_56:rsu_15,rsu_54",
-<<<<<<< HEAD
-	"rsu_57:rsu_17,rsu_36,rsu_55"
-=======
 	    "rsu_57:rsu_17,rsu_36,rsu_55"
->>>>>>> Scenario Rio Verde Updated
 	]
 }

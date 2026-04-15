@@ -10,11 +10,8 @@
 	],
 	"carBeaconType" : "carBeaconToVFN",
 	"vfnServiceMsgType" : "vfnServiceMsg",
-<<<<<<< HEAD
-=======
 	"taskContextMsgType": "taskContextMsg",
 	"migrationRequestMsgType": "migrationRequestMsg",
->>>>>>> Scenario Rio Verde Updated
 	"rsuRunnerMsgType" : "rsuServiceRunner",
 	"openFlowMsgType": "openFlowMsg",
 	"openFlowPacketInMsg": "packetIn",
@@ -78,11 +75,7 @@
         "rsu_40:rsu_39,rsu_42,rsu_43",
         "rsu_41:rsu_30,rsu_34,rsu_42",
         "rsu_42:rsu_40,rsu_41,rsu_44",
-<<<<<<< HEAD
-	"rsu_43:rsu_38,rsu_40,rsu_44,rsu_46",
-=======
 		"rsu_43:rsu_38,rsu_40,rsu_44,rsu_46",
->>>>>>> Scenario Rio Verde Updated
         "rsu_44:rsu_42,rsu_43,rsu_48",
         "rsu_45:rsu_38,rsu_46,rsu_49,rsu_53",
         "rsu_46:rsu_43,rsu_45,rsu_47",
@@ -96,11 +89,7 @@
         "rsu_54:rsu_51,rsu_53,rsu_55,rsu_56",
         "rsu_55:rsu_36,rsu_54,rsu_57",
         "rsu_56:rsu_15,rsu_54",
-<<<<<<< HEAD
-	"rsu_57:rsu_17,rsu_36,rsu_55"
-=======
 		"rsu_57:rsu_17,rsu_36,rsu_55"
->>>>>>> Scenario Rio Verde Updated
 	],
      "rsusPositions":[
    	"rsu_0:-17.798712999856644, -50.93961008315638",
@@ -162,11 +151,7 @@
 	"rsu_56:-17.799035615306956, -50.93108548842413", 
 	"rsu_57:-17.796949588038718, -50.93336441180591"
     ],
-<<<<<<< HEAD
-    "fcnDistributionType":"roundRobin",
-=======
     "fcnDistributionType":"fcnClusterHead",
->>>>>>> Scenario Rio Verde Updated
     "fcnList":[
 	"rsu_0",
 	"rsu_6",
@@ -178,9 +163,6 @@
 	"rsu_43",
 	"rsu_48",
 	"rsu_54"
-<<<<<<< HEAD
-    ]
-=======
     ],
 	"fcnDynamicDistributionType":"fcnClusterHead",
 	"fcnNodesNumber":10,
@@ -244,7 +226,6 @@
         "rsu_56:rsu_54",
 		"rsu_57:rsu_14"
 	]
->>>>>>> Scenario Rio Verde Updated
 
 
 	

@@ -25,11 +25,7 @@
       "applications": [ 
               "org.eclipse.mosaic.app.sdnvfn.CarService1ClientApp",
               "org.eclipse.mosaic.app.sdnvfn.CarInfoToVfnSendingApp",
-<<<<<<< HEAD
               "org.eclipse.mosaic.app.sdnvfn.CarV2xInterfaceApp"           
-=======
-              "org.eclipse.mosaic.app.sdnvfn.CarV2xInterfaceApp"        
->>>>>>> Scenario Rio Verde Updated
             ],
       "deviations": {
         "length": 0.0,
@@ -56,17 +52,10 @@
     {
       "route": "1",
       "startingTime": 0.0,
-<<<<<<< HEAD
       "maxTime": 3000.0,
       "targetFlow": 10.0,
       "spawningMode": "CONSTANT",
       "maxNumberVehicles": 4,
-=======
-      "maxTime": 10000.0,
-      "targetFlow": 30.0,
-      "spawningMode": "CONSTANT",
-      "maxNumberVehicles": 1,
->>>>>>> Scenario Rio Verde Updated
       "laneSelectionMode": "BEST",
       "departSpeed": "0.0 m/s",
       "departSpeedMode": "MAXIMUM",
@@ -74,11 +63,7 @@
         {
             "name": "Car",           
             "group": "RedRoute",
-<<<<<<< HEAD
             "weight": 0.0
-=======
-            "weight": 1.0
->>>>>>> Scenario Rio Verde Updated
         }
       ],
       "deterministic": true,
@@ -88,17 +73,10 @@
     {
       "route": "2",
       "startingTime": 0.0,
-<<<<<<< HEAD
       "maxTime": 3000.0,
       "targetFlow": 10.0,
       "spawningMode": "CONSTANT",
       "maxNumberVehicles": 4,
-=======
-      "maxTime": 10000.0,
-      "targetFlow": 30.0,
-      "spawningMode": "CONSTANT",
-      "maxNumberVehicles": 1,
->>>>>>> Scenario Rio Verde Updated
       "laneSelectionMode": "BEST",
       "departSpeed": "0.0 m/s",
       "departSpeedMode": "MAXIMUM",
@@ -106,11 +84,7 @@
         {
             "name": "Car",
             "group": "GreenRoute",
-<<<<<<< HEAD
             "weight": 0.0
-=======
-            "weight": 1.0
->>>>>>> Scenario Rio Verde Updated
         }
       ],
       "deterministic": true,
@@ -120,17 +94,10 @@
     {
       "route": "3",
       "startingTime": 0.0,
-<<<<<<< HEAD
       "maxTime": 3000.0,
       "targetFlow": 10.0,
       "spawningMode": "CONSTANT",
-      "maxNumberVehicles": 4,
-=======
-      "maxTime": 10000.0,
-      "targetFlow": 30.0,
-      "spawningMode": "CONSTANT",
       "maxNumberVehicles": 1,
->>>>>>> Scenario Rio Verde Updated
       "laneSelectionMode": "BEST",
       "departSpeed": "0.0 m/s",
       "departSpeedMode": "MAXIMUM",
@@ -138,11 +105,7 @@
         {
             "name": "Car",
             "group": "YellowRoute",
-<<<<<<< HEAD
-            "weight": 0.0
-=======
             "weight": 1.0
->>>>>>> Scenario Rio Verde Updated
         }
       ],
       "deterministic": true,
@@ -152,17 +115,10 @@
     {
       "route": "4",
       "startingTime": 0.0,
-<<<<<<< HEAD
       "maxTime": 3000.0,
       "targetFlow": 10.0,
       "spawningMode": "CONSTANT",
       "maxNumberVehicles": 5,
-=======
-      "maxTime": 10000.0,
-      "targetFlow": 30.0,
-      "spawningMode": "CONSTANT",
-      "maxNumberVehicles": 1,
->>>>>>> Scenario Rio Verde Updated
       "laneSelectionMode": "BEST",
       "departSpeed": "0.0 m/s",
       "departSpeedMode": "MAXIMUM",
@@ -170,7 +126,7 @@
         {
             "name": "Car",
             "group": "BlueRoute",
-            "weight": 1.0
+            "weight": 0.0
         }
       ],
       "deterministic": true,
@@ -242,17 +198,10 @@
         }
     ],
     "odValues": [
-<<<<<<< HEAD
         [0, 59, 59, 59],
         [59, 0, 59, 59],
         [59, 59, 0, 59],
         [59, 59, 59, 0]
-=======
-        [0, 0, 0, 0],
-        [0, 0, 0, 0],
-        [0, 0, 0, 0],
-        [0, 0, 0, 0]
->>>>>>> Scenario Rio Verde Updated
     ]
     }
   ],

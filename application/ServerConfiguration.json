@@ -10,6 +10,11 @@
 	],
 	"carBeaconType" : "carBeaconToVFN",
 	"vfnServiceMsgType" : "vfnServiceMsg",
+<<<<<<< HEAD
+=======
+	"taskContextMsgType": "taskContextMsg",
+	"migrationRequestMsgType": "migrationRequestMsg",
+>>>>>>> Scenario Rio Verde Updated
 	"rsuRunnerMsgType" : "rsuServiceRunner",
 	"openFlowMsgType": "openFlowMsg",
 	"openFlowPacketInMsg": "packetIn",
@@ -73,7 +78,11 @@
         "rsu_40:rsu_39,rsu_42,rsu_43",
         "rsu_41:rsu_30,rsu_34,rsu_42",
         "rsu_42:rsu_40,rsu_41,rsu_44",
+<<<<<<< HEAD
 	"rsu_43:rsu_38,rsu_40,rsu_44,rsu_46",
+=======
+		"rsu_43:rsu_38,rsu_40,rsu_44,rsu_46",
+>>>>>>> Scenario Rio Verde Updated
         "rsu_44:rsu_42,rsu_43,rsu_48",
         "rsu_45:rsu_38,rsu_46,rsu_49,rsu_53",
         "rsu_46:rsu_43,rsu_45,rsu_47",
@@ -87,7 +96,11 @@
         "rsu_54:rsu_51,rsu_53,rsu_55,rsu_56",
         "rsu_55:rsu_36,rsu_54,rsu_57",
         "rsu_56:rsu_15,rsu_54",
+<<<<<<< HEAD
 	"rsu_57:rsu_17,rsu_36,rsu_55"
+=======
+		"rsu_57:rsu_17,rsu_36,rsu_55"
+>>>>>>> Scenario Rio Verde Updated
 	],
      "rsusPositions":[
    	"rsu_0:-17.798712999856644, -50.93961008315638",
@@ -149,7 +162,11 @@
 	"rsu_56:-17.799035615306956, -50.93108548842413", 
 	"rsu_57:-17.796949588038718, -50.93336441180591"
     ],
+<<<<<<< HEAD
     "fcnDistributionType":"roundRobin",
+=======
+    "fcnDistributionType":"fcnClusterHead",
+>>>>>>> Scenario Rio Verde Updated
     "fcnList":[
 	"rsu_0",
 	"rsu_6",
@@ -161,7 +178,73 @@
 	"rsu_43",
 	"rsu_48",
 	"rsu_54"
+<<<<<<< HEAD
     ]
+=======
+    ],
+	"fcnDynamicDistributionType":"fcnClusterHead",
+	"fcnNodesNumber":10,
+	"fcnRunnerHead":[
+		"rsu_0:rsu_0",
+        "rsu_1:rsu_0",
+        "rsu_2:rsu_0",
+        "rsu_3:rsu_6",
+        "rsu_4:rsu_0",
+        "rsu_5:rsu_6",
+        "rsu_6:rsu_6",
+        "rsu_7:rsu_0",
+        "rsu_8:rsu_0",
+        "rsu_9:rsu_6",
+        "rsu_10:rsu_6",
+        "rsu_11:rsu_13",
+        "rsu_12:rsu_13",
+        "rsu_13:rsu_13",
+        "rsu_14:rsu_14",
+        "rsu_15:rsu_14",
+        "rsu_16:rsu_13",
+        "rsu_17:rsu_14",
+        "rsu_18:rsu_13",
+        "rsu_19:rsu_6",
+        "rsu_20:rsu_22",
+        "rsu_21:rsu_22",
+        "rsu_22:rsu_22",
+        "rsu_23:rsu_22",
+        "rsu_24:rsu_22",
+        "rsu_25:rsu_28",
+        "rsu_26:rsu_34",
+        "rsu_27:rsu_28",
+        "rsu_28:rsu_28",
+        "rsu_29:rsu_28",
+        "rsu_30:rsu_28",
+        "rsu_31:rsu_28",
+        "rsu_32:rsu_28",
+        "rsu_33:rsu_34",
+        "rsu_34:rsu_34",
+        "rsu_35:rsu_34",
+        "rsu_36:rsu_54",
+        "rsu_37:rsu_34",
+        "rsu_38:rsu_43",
+        "rsu_39:rsu_34",
+        "rsu_40:rsu_43",
+        "rsu_41:rsu_34",
+        "rsu_42:rsu_43",
+		"rsu_43:rsu_43",
+        "rsu_44:rsu_43",
+        "rsu_45:rsu_48",
+        "rsu_46:rsu_43",
+        "rsu_47:rsu_48",
+        "rsu_48:rsu_48",
+        "rsu_49:rsu_48",
+        "rsu_50:rsu_48",
+        "rsu_51:rsu_54",
+        "rsu_52:rsu_54",
+        "rsu_53:rsu_54",
+        "rsu_54:rsu_54",
+        "rsu_55:rsu_54",
+        "rsu_56:rsu_54",
+		"rsu_57:rsu_14"
+	]
+>>>>>>> Scenario Rio Verde Updated
 
 
 	

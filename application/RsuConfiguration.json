@@ -7,6 +7,11 @@
 	"vfnServiceMsgType" : "vfnServiceMsg",
 	"rsuRunnerMsgType" : "rsuServiceRunner",
 	"serviceResultMsgType": "serviceResultMsg",
+<<<<<<< HEAD
+=======
+	"taskContextMsgType": "taskContextMsg",
+	"migrationRequestMsgType": "migrationRequestMsg",
+>>>>>>> Scenario Rio Verde Updated
 	"serverAddress" : "10.5.0.0",
 	"serverName" : "server_0",
 	"netMask": "255.255.0.0",
